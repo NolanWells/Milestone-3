@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
