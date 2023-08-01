@@ -19,7 +19,7 @@
 }
 
 .navLinks .nav-item {
-  margin-right: 10px; /* Add some spacing between the links */
+  margin-left: 0; /* Add some spacing between the links */
 }
 
 /* Add your other styles for the links as needed */
@@ -30,5 +30,5 @@
 }
 
 .navLinks .nav-link:hover {
-  background-color: #555;
+  background-color: #eb131b;
 }
