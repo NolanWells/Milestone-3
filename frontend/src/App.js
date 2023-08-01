@@ -12,19 +12,19 @@ import Login from "./views/Login";
 function App() {
   return (
     <Router>
-      <Container className='fixed-top'>
+      <Container className='navBar'>
 
-        <Nav>
+        <Nav className='navLinks'>
 
         <Nav.Item>
             <Nav.Link href="/">
-              <Link className='homeLink' to="/" style={{textDecoration: 'none'}}>Home</Link>
+              <Link className='homeLink' to="/">Home</Link>
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
             <Nav.Link href="/">
-              <Link className='menuLink' to="/Menu" style={{textDecoration: 'none'}}>Menu</Link>
+              <Link className='menuLink' to="/Menu">Menu</Link>
             </Nav.Link>
           </Nav.Item>
 
