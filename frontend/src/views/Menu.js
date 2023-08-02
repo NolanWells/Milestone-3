@@ -1,5 +1,5 @@
 export default function Menu(){
     return (
-        <h1>Menu</h1>
+        <h1>hurry up bailey</h1>
     )
 }
