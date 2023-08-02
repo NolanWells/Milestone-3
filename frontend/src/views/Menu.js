@@ -1,6 +1,7 @@
-import { BrowserRouter as  Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container';
+import { Route } from 'react-router-dom';
 
 import Salads from './Menu/Salads'
 import Burgers from './Menu/Burgers'
@@ -27,6 +28,14 @@ export default function Menu(){
                     <Nav.Item eventKey={"Dessert"}>
                         <Link to= "/Dessert">Dessert</Link>
                     </Nav.Item>
+
+                    <div className="display">
+                        <Route path="/Salads" Component={Salads}/>
+                        <Route path="/Burgers" Component={Burgers}/>
+                        <Route path="/Sides" Component={Sides}/>
+                        <Route path="/Dessert" Component={Dessert}/>
+                    </div>
+
                 </Nav>
             </Container>
     )
