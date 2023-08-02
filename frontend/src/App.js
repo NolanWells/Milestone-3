@@ -41,7 +41,7 @@ function App() {
           </Nav.Item>
 
           <img src='https://www.redrobin.com/assets/images/RR_Logo.svg' 
-            style={{ width: '100px', height: '100px', position: 'absolute', left: '48%', top: '-3%'}}
+            style={{ width: '125px', height: '125px', position: 'absolute', left: '47%', top: '-3%'}}
           />
 
         </Nav>
