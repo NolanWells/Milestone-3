@@ -1,4 +1,4 @@
-import Container from 'react-bootstrap/Container'
+import { Container, Row, Col } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 
 import Salads from './Menu/Salads'
@@ -10,10 +10,11 @@ import Sides from './Menu/Sides'
 export default function Menu() {
 
     return (
-        <Container style={{ display: 'grid', placeItems: 'center' }}>
-            <h1>SALADS</h1>
-            <h2>----------------------------------------------------</h2>
-            <Salads/>
+        <Container style={{ display: 'grid' ,placeItems: 'center' }}>
+            <Card>
+                <h1 style={{ textAlign: 'center' }}>SALADS</h1>
+                <Salads/>
+            </Card>
 
 
             <Card style={{ border: '1px solid black', textAlign: 'center'}}>
