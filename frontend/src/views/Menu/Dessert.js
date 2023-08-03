@@ -33,7 +33,10 @@ export default function Desserts() {
                             alt='NEW! Peaches & Cream Milshake'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>NEW! Peaches & Cream Milshake</Card.Text>
+                        <Card.Text><b>NEW! Peaches & Cream Milshake</b></Card.Text>
+                        <hr/>
+                        <p>$6.99|Cal 1210</p>
+                        <p>Creamy vanilla soft serve blended with milk, diced peaches and peach puree. Topped with</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -44,7 +47,10 @@ export default function Desserts() {
                             alt='Freckled Lemonade Cake'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Freckled Lemonade Cake</Card.Text>
+                        <Card.Text><b>Freckled Lemonade Cake</b></Card.Text>
+                        <hr/>
+                        <p>$8.99|Cal 1060</p>
+                        <p>Light and refreshing lemon cake layered with lemon mousse and white chocolate bits, topped with lemon curd and strawberry</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -55,7 +61,10 @@ export default function Desserts() {
                             alt='Mountain Gigh Mudd Pie'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Mountain Gigh Mudd Pie</Card.Text>
+                        <Card.Text><b>Mountain Gigh Mudd Pie</b></Card.Text>
+                        <hr/>
+                        <p>$8.99|Cal 1340</p>
+                        <p>A mountain of chocolate and vanilla ice cream, layered with OREO® cookies, fudge,</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -66,7 +75,10 @@ export default function Desserts() {
                             alt='Fudge-Filled Chocolate Chip Cookies'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Fudge-Filled Chocolate Chip Cookies</Card.Text>
+                        <Card.Text><b>Fudge-Filled Chocolate Chip Cookies</b></Card.Text>
+                        <hr/>
+                        <p>$1.99|Cal 330</p>
+                        <p>One or five of our chocolate chip cookies that feature a soft, fudge-filled center that</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -77,7 +89,10 @@ export default function Desserts() {
                             alt='Cinnamon Sugar Doh! Ring Shorty'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Cinnamon Sugar Doh! Ring Shorty</Card.Text>
+                        <Card.Text><b>Cinnamon Sugar Doh! Ring Shorty</b></Card.Text>
+                        <hr/>
+                        <p>$8.69|Cal 770</p>
+                        <p>Four cinnamon and sugar croissant donut rings served with caramel and fudge.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -88,7 +103,10 @@ export default function Desserts() {
                             alt='Cinnamon Sugar Towering Doh! Rings'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Cinnamon Sugar Towering Doh! Rings</Card.Text>
+                        <Card.Text><b>Cinnamon Sugar Towering Doh! Rings</b></Card.Text>
+                        <hr/>
+                        <p>$10.69|Cal 1550</p>
+                        <p>Eight cinnamon and sugar croissant donut rings served with caramel and fudge.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -99,7 +117,10 @@ export default function Desserts() {
                             alt='Chocolate Milkshake'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Chocolate Milkshake</Card.Text>
+                        <Card.Text><b>Chocolate Milkshake</b></Card.Text>
+                        <hr/>
+                        <p>$6.49|Cal 1020</p>
+                        <p>Creamy soft-serve blended with milk and chocolate syrup. Garnished with whipped</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -110,7 +131,10 @@ export default function Desserts() {
                             alt='Stawberry Milkshake'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Stawberry Milkshake</Card.Text>
+                        <Card.Text><b>Stawberry Milkshake</b></Card.Text>
+                        <hr/>
+                        <p>$6.49|Cal 930</p>
+                        <p>Creamy soft-serve blended with milk and strawberry. Garnished with whipped cream</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -121,7 +145,10 @@ export default function Desserts() {
                             alt='Vanilla Milkshake'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Vanilla Milkshake</Card.Text>
+                        <Card.Text><b>Vanilla Milkshake</b></Card.Text>
+                        <hr/>
+                        <p>$6.49|Cal 940</p>
+                        <p>Creamy soft-serve blended with milk and vanilla syrup. Garnished with whipped cream</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 

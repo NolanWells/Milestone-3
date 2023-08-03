@@ -33,7 +33,10 @@ export default function Sides() {
                             alt='Get Saucy!'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Get Saucy!</Card.Text>
+                        <Card.Text><b>Get Saucy!</b></Card.Text>
+                        <hr/>
+                        <p>$1.99|Cal 50</p>
+                        <p>Our sauce secret is out! Creamy Ranch Dressing and coveted Campfire Mayo are</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -44,7 +47,10 @@ export default function Sides() {
                             alt='Steak Fries'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Steak Fries</Card.Text>
+                        <Card.Text><b>Steak Fries</b></Card.Text>
+                        <hr/>
+                        <p>$1.99|Cal 350</p>
+                        <p>Thick cut and fried to perfection with Red's Original seasoning.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -55,7 +61,10 @@ export default function Sides() {
                             alt='Sweet Potato Fries'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Sweet Potato Fries</Card.Text>
+                        <Card.Text><b>Sweet Potato Fries</b></Card.Text>
+                        <hr/>
+                        <p>$1.99|Cal 460</p>
+                        <p>Thin cut sweet potatoes fried to perfection with a dash of salt.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -66,7 +75,10 @@ export default function Sides() {
                             alt='Garlic Fries'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Garlic Fries</Card.Text>
+                        <Card.Text><b>Garlic Fries</b></Card.Text>
+                        <hr/>
+                        <p>$1.99|Cal 430</p>
+                        <p>Thick cut and fried to perfection with garlic Parmesan butter and Parmesan cheese.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -77,7 +89,10 @@ export default function Sides() {
                             alt='Yukon Chips'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Yukon Chips</Card.Text>
+                        <Card.Text><b>Yukon Chips</b></Card.Text>
+                        <hr/>
+                        <p>$1.99|Cal 500</p>
+                        <p>Perfectly seasoned with Red Robin® Seasoning.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -88,7 +103,10 @@ export default function Sides() {
                             alt='Steamed Broccoli'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Steamed Broccoli</Card.Text>
+                        <Card.Text><b>Steamed Broccoli</b></Card.Text>
+                        <hr/>
+                        <p>$1.99|Cal 30</p>
+                        <p>Fresh broccoli, steamed to perfection.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 

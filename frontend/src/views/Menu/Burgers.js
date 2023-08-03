@@ -33,7 +33,10 @@ export default function Burgers() {
                             alt='Cheesy Bacon Fondue'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Cheesy Bacon Fondue</Card.Text>
+                        <Card.Text><b>Cheesy Bacon Fondue</b></Card.Text>
+                        <hr/>
+                        <p>$16.29|Cal 1350</p>
+                        <p>Hardwood-smoked bacon, American cheese and mayo. Served with Cheesy Bacon Fondue for dipping.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -44,7 +47,10 @@ export default function Burgers() {
                             alt='The Southern Charm'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>The Southern Charm</Card.Text>
+                        <Card.Text><b>The Southern Charm</b></Card.Text>
+                        <hr/>
+                        <p>$15.99|Cal 1190</p>
+                        <p>Crush on this: hardwood-smoked bacon, Whiskey River® BBQ Sauce, cheddar,</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -55,7 +61,10 @@ export default function Burgers() {
                             alt='Whiskey River BBQ'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Whiskey River BBQ</Card.Text>
+                        <Card.Text><b>Whiskey River BBQ</b></Card.Text>
+                        <hr/>
+                        <p>$14.49|Cal 1190</p>
+                        <p>Our signature Whiskey River® BBQ Sauce, crispy onion straws, cheddar, lettuce, tomato and mayo.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -66,7 +75,10 @@ export default function Burgers() {
                             alt='Smoke & Pepper'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Smoke & Pepper</Card.Text>
+                        <Card.Text><b>Smoke & Pepper</b></Card.Text>
+                        <hr/>
+                        <p>$16.19|Cal 820</p>
+                        <p>This combo of black-peppered bacon, cheddar, lettuce, dill pickles and Smoke &</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -77,7 +89,10 @@ export default function Burgers() {
                             alt='Royal Red Robin'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Royal Red Robin</Card.Text>
+                        <Card.Text><b>Royal Red Robin</b></Card.Text>
+                        <hr/>
+                        <p>$15.39|Cal 1140</p>
+                        <p>It's a classic! Over-easy egg*, hardwood-smoked bacon, American cheese, lettuce,</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
                     <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
@@ -87,7 +102,10 @@ export default function Burgers() {
                             alt="Burnin' Love Burger"
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Burnin' Love Burger</Card.Text>
+                        <Card.Text><b>Burnin' Love Burger</b></Card.Text>
+                        <hr/>
+                        <p>$15.49|Cal 770</p>
+                        <p>Fried jalapeño coins, house-made salsa, pepper-jack, lettuce, tomato and chipotle aioli.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -98,7 +116,10 @@ export default function Burgers() {
                             alt='Bleu Ribbon'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Bleu Ribbon</Card.Text>
+                        <Card.Text><b>Bleu Ribbon</b></Card.Text>
+                        <hr/>
+                        <p>$15.29|Cal 1060</p>
+                        <p>Steak sauce, bleu cheese crumbles, crispy onion straws and chipotle aioli for a steakhouse experience. Knives optional.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -109,7 +130,10 @@ export default function Burgers() {
                             alt='Scorpion'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Scorpion</Card.Text>
+                        <Card.Text><b>Scorpion</b></Card.Text>
+                        <hr/>
+                        <p>$16.19|Cal 1010</p>
+                        <p>Topped with pepper-jack, crispy jalapeños, Scorpion Pepper Sauce, pickles, onion and</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -120,7 +144,10 @@ export default function Burgers() {
                             alt='Banzai'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Banzai</Card.Text>
+                        <Card.Text><b>Banzai</b></Card.Text>
+                        <hr/>
+                        <p>$14.49|Cal 1000</p>
+                        <p>Take a trip to the tropics. Teriyaki-glazed patty topped with sweet grilled pineapple,</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -131,7 +158,10 @@ export default function Burgers() {
                             alt='Bacon Cheeseburger'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Bacon Cheeseburger</Card.Text>
+                        <Card.Text><b>Bacon Cheeseburger</b></Card.Text>
+                        <hr/>
+                        <p>$14.99|Cal 950</p>
+                        <p>Hardwood-smoked bacon, lettuce, tomato, mayo and your choice of cheese.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
                     <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
@@ -141,7 +171,10 @@ export default function Burgers() {
                             alt='Guacamole Bacon'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Guacamole Bacon</Card.Text>
+                        <Card.Text><b>Guacamole Bacon</b></Card.Text>
+                        <hr/>
+                        <p>$15.59|Cal 950</p>
+                        <p>House-made guac, hardwood-smoked bacon, Swiss and onion topped with lettuce, tomato and mayo.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -152,7 +185,10 @@ export default function Burgers() {
                             alt='Red Robin Gourmet Cheeseburger'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Red Robin Gourmet Cheeseburger</Card.Text>
+                        <Card.Text><b>Red Robin Gourmet Cheeseburger</b></Card.Text>
+                        <hr/>
+                        <p>$14.19|Cal 800</p>
+                        <p>Pickle relish, onion, pickles, lettuce, tomato, mayo and your choice of cheese.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -163,7 +199,10 @@ export default function Burgers() {
                             alt="Sauteed 'Shroom"
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Sauteed 'Shroom</Card.Text>
+                        <Card.Text><b>Sauteed 'Shroom</b></Card.Text>
+                        <hr/>
+                        <p>$14.59|Cal 900</p>
+                        <p>A mound of fresh, sautéed garlic mushrooms, covered with melty Swiss.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -174,7 +213,10 @@ export default function Burgers() {
                             alt='Monster'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Monster</Card.Text>
+                        <Card.Text><b>Monster</b></Card.Text>
+                        <hr/>
+                        <p>$16.99|Cal 1140</p>
+                        <p>What's better than one juicy patty? Two! Grilled with your choice of cheese, onion,</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -185,7 +227,10 @@ export default function Burgers() {
                             alt='Keep it Simple'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Keep it Simple</Card.Text>
+                        <Card.Text><b>Keep it Simple</b></Card.Text>
+                        <hr/>
+                        <p>$13.59|Cal 380</p>
+                        <p>Keep it simple (simply delicious, that is) with a naked beef, chicken or ancient-grain veggie patty served with onion, lettuce and tomato.</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
                 </div>

@@ -33,7 +33,10 @@ export default function Salads() {
                             alt='House Salad'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>House Salad</Card.Text>
+                        <Card.Text><b>House Salad</b></Card.Text>
+                        <hr/>
+                        <p>$6.99|Cal 80</p>
+                        <p>Diced tomato, sliced cucumber, shredded Cheddar cheese and croutons on mixed</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -44,7 +47,10 @@ export default function Salads() {
                             alt='House Salad'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Avo-Cobb-O Salad</Card.Text>
+                        <Card.Text><b>Avo-Cobb-O Salad</b></Card.Text>
+                        <hr/>
+                        <p>$14.49|Cal 570</p>
+                        <p>Grilled chicken breast, hardwood-smoked bacon, fresh avocado, bleu cheese crumbles, hard-boiled eggs, tomato and croutons</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -55,7 +61,10 @@ export default function Salads() {
                             alt='House Salad'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Crispy Chicken Tender Salad</Card.Text>
+                        <Card.Text><b>Crispy Chicken Tender Salad</b></Card.Text>
+                        <hr/>
+                        <p>$14.49|Cal 840</p>
+                        <p>Chicken tenders, hard-boiled eggs, hardwood-smoked bacon, tomato, croutons</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -66,7 +75,10 @@ export default function Salads() {
                             alt='House Salad'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Simply Grilled Chicken Salad</Card.Text>
+                        <Card.Text><b>Simply Grilled Chicken Salad</b></Card.Text>
+                        <hr/>
+                        <p>$13.79|Cal 310</p>
+                        <p>This combo of grilled chicken breast, cheddar, tomato, croutons and cucumbers is oh, so simply satisfying. Served on mixed</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
@@ -77,7 +89,10 @@ export default function Salads() {
                             alt='House Salad'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text>Southwest Salad</Card.Text>
+                        <Card.Text><b>Southwest Salad</b></Card.Text>
+                        <hr/>
+                        <p>$14.79|Cal 790</p>
+                        <p>Ancho-grilled chicken breast, black beans, avocado, fried jalapeño coins, tomato, corn,</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
                 </div>
