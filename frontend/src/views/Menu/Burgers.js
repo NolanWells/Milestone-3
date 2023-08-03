@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Card, CardImg, Container, Button } from 'react-bootstrap';
 
-export default function Salads() {
+export default function Burgers() {
     const cardGroupRef = useRef(null);
 
     const cardWidth = 350; // Adjust this value based on your Card width
