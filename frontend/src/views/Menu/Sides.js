@@ -29,57 +29,69 @@ export default function Sides() {
                     <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
                         <CardImg
                             variant='top'
-                            src='https://olo-images-live.imgix.net/05/057463455fe641b39b66bac2dd4d0840.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=f02858b1e1bd8f163149ffc4080c82d3'
-                            alt=''
+                            src='https://olo-images-live.imgix.net/d4/d4ae8edade03414c8c2088e8baddee28.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=fb2c38e381de3488d3240a4f847eed19'
+                            alt='Get Saucy!'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text></Card.Text>
+                        <Card.Text>Get Saucy!</Card.Text>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
                     <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
                         <CardImg
                             variant='top'
-                            src='https://olo-images-live.imgix.net/9e/9efeee6016444d9c97251455b0c3b616.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=4337783f273b19b29c317c01cfbfd994'
-                            alt=''
+                            src='https://olo-images-live.imgix.net/21/21e0edf56c1544f287a0cddf82e1f420.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=c8e04afb6a1298977c3fa5c8fe44de35'
+                            alt='Steak Fries'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text></Card.Text>
+                        <Card.Text>Steak Fries</Card.Text>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
                     <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
                         <CardImg
                             variant='top'
-                            src='https://olo-images-live.imgix.net/0b/0b5f34af166e48088f1376f1195c7b92.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=4322e13975b523500ad3b2a260e05997'
-                            alt=''
+                            src='https://olo-images-live.imgix.net/4b/4bbab81a004648ba8ef0fed7f8e48cbf.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=c21376e0322521db1855c0830dadf595'
+                            alt='Sweet Potato Fries'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text></Card.Text>
+                        <Card.Text>Sweet Potato Fries</Card.Text>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
                     <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
                         <CardImg
                             variant='top'
-                            src='https://olo-images-live.imgix.net/ea/ea83c5817fee41c7be291c6a5dddca56.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=6f5b7dc47f2225474544292361a0a960'
-                            alt=''
+                            src='https://olo-images-live.imgix.net/cf/cf8ce00e14e94a35894885bfc23bd0e2.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=491574624bb92c1e5789dca3d3cd7659'
+                            alt='Garlic Fries'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text></Card.Text>
+                        <Card.Text>Garlic Fries</Card.Text>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
                     <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
                         <CardImg
                             variant='top'
-                            src='https://olo-images-live.imgix.net/5b/5bffbe920a114245be9587a94407d641.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=f0a6209bcf27e2e9cf4770d283853a57'
-                            alt=''
+                            src='https://olo-images-live.imgix.net/2e/2ed64b67412f438c9c603b8885c4e86c.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=7fc953627c7bbda90766575d056a6e2c'
+                            alt='Yukon Chips'
                             style={{ width: "100%", height: "10em" }} // Adjust height as needed
                         />
-                        <Card.Text></Card.Text>
+                        <Card.Text>Yukon Chips</Card.Text>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
+
+                    <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
+                        <CardImg
+                            variant='top'
+                            src='https://olo-images-live.imgix.net/c0/c0dc67397d094a8991cea5991a594267.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=c38b60c048fa7c55df6c24c5e36794a6'
+                            alt='Steamed Broccoli'
+                            style={{ width: "100%", height: "10em" }} // Adjust height as needed
+                        />
+                        <Card.Text>Steamed Broccoli</Card.Text>
+                        <Button type='submit'>Add To Bag</Button>
+                    </Card>
+
                 </div>
                 <Button onClick={handleScrollRight}>&#8594;</Button>
             </div>

@@ -3,6 +3,7 @@ import { Container, Card } from 'react-bootstrap';
 
 import Salads from './Menu/Salads';
 import Burgers from './Menu/Burgers';
+import Sides from './Menu/Sides'
 import Desserts from './Menu/Dessert';
 
 export default function Menu() {
@@ -20,7 +21,7 @@ export default function Menu() {
 
             <Card style={{ border: '1px solid black', textAlign: 'center' }}>
                 <h1 style={{ textAlign: 'center' }}>SIDES</h1>
-                {/* <Sides /> */}
+                <Sides />
             </Card>
 
             <Card style={{ border: '1px solid black', textAlign: 'center' }}>
