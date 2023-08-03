@@ -1,30 +1,36 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Card, CardImg, Container, Button } from 'react-bootstrap';
 
-export default function Sides() {
+export default function Salads() {
     const cardGroupRef = useRef(null);
+    const [currentCard, setCurrentCard] = useState(0);
 
     const cardWidth = 350; // Adjust this value based on your Card width
 
     const handleScrollLeft = () => {
-        cardGroupRef.current.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        const newIndex = currentCard - 1 >= 0 ? currentCard - 1 : 0;
+        cardGroupRef.current.scrollLeft = newIndex * cardWidth;
+        setCurrentCard(newIndex);
     };
 
     const handleScrollRight = () => {
-        cardGroupRef.current.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        const newIndex = currentCard + 1 <= 4 ? currentCard + 1 : 4;
+        cardGroupRef.current.scrollLeft = newIndex * cardWidth;
+        setCurrentCard(newIndex);
     };
 
     return (
         <Container>
-            <div style={{ display: 'flex', alignItems: 'center', overflowX: 'hidden' }}>
+             <div style={{ display: 'flex', alignItems: 'center', overflowX: 'hidden' }}>
                 <Button onClick={handleScrollLeft}>&#8592;</Button>
                 <div
                     ref={cardGroupRef}
                     style={{
                         display: 'flex',
                         alignItems: 'center',
-                        width: `${cardWidth}px`, // Show only one card at a time
-                    }}
+                        overflowX: 'hidden',
+                        scrollBehavior: 'smooth', // Enable smooth scrolling
+                      }}
                 >
                     <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
                         <CardImg
