@@ -1,38 +1,54 @@
 import React, { useRef, useState } from 'react';
-import { Card, CardImg, Container, Button } from 'react-bootstrap';
+import { Container, Card, CardImg, Button } from 'react-bootstrap';
 
 export default function Salads() {
-    const cardGroupRef = useRef(null);
-    const [currentCard, setCurrentCard] = useState(0);
+  const cardGroupRef = useRef(null);
+  const [currentCard, setCurrentCard] = useState(0);
 
-    const cardWidth = 350; // Adjust this value based on your Card width
+  const cardWidth = 350; // Adjust this value based on your Card width
+  const totalCards = 5; // Update this with the total number of Salad cards
 
-    const handleScrollLeft = () => {
-        const newIndex = currentCard - 1 >= 0 ? currentCard - 1 : 0;
-        cardGroupRef.current.scrollLeft = newIndex * cardWidth;
-        setCurrentCard(newIndex);
-    };
+  const handleScrollLeft = () => {
+    const newIndex = currentCard - 1 >= 0 ? currentCard - 1 : 0;
+    setCurrentCard(newIndex);
+    cardGroupRef.current.scrollTo({
+      left: newIndex * cardWidth,
+      behavior: 'smooth',
+    });
+  };
 
-    const handleScrollRight = () => {
-        const newIndex = currentCard + 1 <= 4 ? currentCard + 1 : 4;
-        cardGroupRef.current.scrollLeft = newIndex * cardWidth;
-        setCurrentCard(newIndex);
-    };
+  const handleScrollRight = () => {
+    const newIndex = currentCard + 1 <= totalCards - 1 ? currentCard + 1 : totalCards - 1;
+    setCurrentCard(newIndex);
+    cardGroupRef.current.scrollTo({
+      left: newIndex * cardWidth,
+      behavior: 'smooth',
+    });
+  };
 
-    return (
-        <Container>
-               <div style={{ display: 'flex', alignItems: 'center', overflowX: 'hidden' }}>
-                <Button onClick={handleScrollLeft}>&#8592;</Button>
-                <div
-                    ref={cardGroupRef}
-                    style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        overflowX: 'hidden',
-                        scrollBehavior: 'smooth', // Enable smooth scrolling
-                      }}
-                >
-                    <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
+  return (
+    <Container>
+      <div style={{ display: 'flex', alignItems: 'center', overflowX: 'hidden' }}>
+        <Button onClick={handleScrollLeft}>&#8592;</Button>
+        <div
+          ref={cardGroupRef}
+          className="cards-container"
+          style={{
+            width: `${totalCards * cardWidth}px`,
+            display: 'flex',
+            transition: 'transform 0.5s ease',
+            transform: `translateX(-${currentCard * cardWidth}px)`,
+          }}
+        >
+            {/* The "Salad" components go here */}
+            <div
+              style={{
+                transform: `translateX(-${currentCard * cardWidth}px)`,
+                transition: 'transform 0.5s ease',
+                display: 'flex',
+              }}
+            >
+                    <Card className="p-2 flex-fill" style={{ textAlign: 'center', width: cardWidth }}>
                         <CardImg
                             variant='top'
                             src='https://olo-images-live.imgix.net/05/057463455fe641b39b66bac2dd4d0840.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=f02858b1e1bd8f163149ffc4080c82d3'
@@ -46,7 +62,7 @@ export default function Salads() {
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
-                    <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
+                    <Card className="p-2 flex-fill" style={{ textAlign: 'center', width: cardWidth }}>
                         <CardImg
                             variant='top'
                             src='https://olo-images-live.imgix.net/9e/9efeee6016444d9c97251455b0c3b616.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=4337783f273b19b29c317c01cfbfd994'
@@ -60,7 +76,7 @@ export default function Salads() {
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
-                    <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
+                    <Card className="p-2 flex-fill" style={{ textAlign: 'center', width: cardWidth }}>
                         <CardImg
                             variant='top'
                             src='https://olo-images-live.imgix.net/0b/0b5f34af166e48088f1376f1195c7b92.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=4322e13975b523500ad3b2a260e05997'
@@ -74,7 +90,7 @@ export default function Salads() {
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
-                    <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
+                    <Card className="p-2 flex-fill" style={{ textAlign: 'center', width: cardWidth }}>
                         <CardImg
                             variant='top'
                             src='https://olo-images-live.imgix.net/ea/ea83c5817fee41c7be291c6a5dddca56.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=6f5b7dc47f2225474544292361a0a960'
@@ -88,7 +104,7 @@ export default function Salads() {
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
 
-                    <Card className='p-2 flex-fill' style={{ textAlign: 'center' }}>
+                    <Card className="p-2 flex-fill" style={{ textAlign: 'center', width: cardWidth }}>
                         <CardImg
                             variant='top'
                             src='https://olo-images-live.imgix.net/5b/5bffbe920a114245be9587a94407d641.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1725&h=975&fit=fill&fm=png32&bg=transparent&s=f0a6209bcf27e2e9cf4770d283853a57'
@@ -101,6 +117,7 @@ export default function Salads() {
                         <p>Ancho-grilled chicken breast, black beans, avocado, fried jalapeño coins, tomato, corn,</p>
                         <Button type='submit'>Add To Bag</Button>
                     </Card>
+                </div>
                 </div>
                 <Button onClick={handleScrollRight}>&#8594;</Button>
             </div>
