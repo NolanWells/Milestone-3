@@ -1,16 +1,15 @@
+import React ,{useState}from "react";
 import Container from "react-bootstrap/esm/Container";
 import Card from "react-bootstrap/Card";
 import { Button, Nav } from "react-bootstrap";
-import React, {Component, useState} from "react";
+import axios from "axios";
 
-
-
-
-
-export const Login = () => {
+const Register = () => {
     const [user,setUser] = useState({
-        username: " ",
-        password: " ",
+        email:"",
+        username: "",
+        password: "",
+        repassword:"",
     })
     
     const handleChange = (e) => {
@@ -22,13 +21,23 @@ export const Login = () => {
             }
         })
     }
+const handleSubmit = async()=>{
 
-
+    await axios.post("http://localhost:5000/register",user)
+    .then(res =>console.log(res))
+}
     return (
         <Container className='fixed-top'>
             <h2 style={{ textAlign: "center" }}></h2>
             <Card style={{ textAlign: "center" }}>
-                <h1>Login</h1>
+                <h1>Register</h1>
+                <label for="email">Email</label><br />
+                <input type="text" id="email" placeholder="Email" name="email" value={user.email} onChange={handleChange}
+                />
+
+                <br />
+                <br />
+
                 <label for='username'>Username:</label> <br />
                 <input type='text' id='username' placeholder="Username" name="username" value={user.username} onChange={handleChange}
                 />
@@ -43,9 +52,17 @@ export const Login = () => {
                 <br />
                 <br />
 
-                <Button className="btn">Submit</Button>
+                <label for="re-password">Re-Password:</label> <br />
+                <input type="password" id="re-password" placeholder="Re-Password" name="repassword" value={user.repassword} onChange={handleChange}
+                />
+
+                <br />
+                <br />
+
+                <Button className="btn" onClick={handleSubmit}>Submit</Button>
             </Card>
         </Container >
     )
 }
-export default Login
+
+export default Register
