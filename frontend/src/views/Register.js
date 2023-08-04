@@ -21,7 +21,9 @@ const Register = () => {
             }
         })
     }
-const handleSubmit = async()=>{
+const handleSubmit = async(e)=>{
+    e.preventDefault();
+        console.log(user)
 
     await axios.post("http://localhost:5000/register",user)
     .then(res =>console.log(res))
