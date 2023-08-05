@@ -1,8 +1,14 @@
 from flask import Flask, send_from_directory
+from flask_cors import CORS
 import os
 
 def create_app():
     app = Flask(__name__)
+    CORS(app)
+
+    from . import login
+    app.register_blueprint(login.bp)
+
 
     # Set the root directory where the React build files are located
     react_build_dir = os.path.join(os.path.dirname(__file__), '../public/build')
