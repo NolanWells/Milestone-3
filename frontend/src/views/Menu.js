@@ -9,7 +9,7 @@ import Desserts from './Menu/Dessert';
 
 export default function Menu() {
   return (
-    <Container style={{ overflowX: 'auto' }}>
+    <Container>
       {/* Render each section separately */}
       <Card style={{ border: '1px solid black', textAlign: 'center' }}>
         <h1 style={{ textAlign: 'center' }}>SALADS</h1>
