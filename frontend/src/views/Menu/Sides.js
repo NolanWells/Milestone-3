@@ -58,7 +58,7 @@ export default function Salads() {
         <Container>
             <Row>
                 {sidesData.map((sides) => (
-                    <Col key={sides.id} xs={12} md={4}>
+                    <Col key={sides.id} xs={12} md={3}>
                         <Card className="p-2">
                             <CardImg
                                 variant='top'
@@ -70,7 +70,7 @@ export default function Salads() {
                                 <b>{sides.name}</b>
                             </Card.Text>
                             <hr />
-                            <p>{sides.price}</p>
+                            <p>${sides.price} | {sides.cal} Cal</p>
                             <p>{sides.description}</p>
                             <Button type='submit'>Add To Bag</Button>
                         </Card>

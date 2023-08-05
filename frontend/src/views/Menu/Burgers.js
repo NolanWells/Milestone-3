@@ -130,7 +130,7 @@ export default function Burgers() {
         <Container>
             <Row>
                 {burgersData.map((burger) => (
-                    <Col key={burger.id} xs={12} md={4}>
+                    <Col key={burger.id} xs={12} md={3}>
                         <Card className="p-2">
                             <CardImg
                                 variant='top'
@@ -142,7 +142,7 @@ export default function Burgers() {
                                 <b>{burger.name}</b>
                             </Card.Text>
                             <hr />
-                            <p>{burger.price}</p>
+                            <p>${burger.price} | {burger.cal} Cal</p>
                             <p>{burger.description}</p>
                             <Button type='submit'>Add To Bag</Button>
                         </Card>

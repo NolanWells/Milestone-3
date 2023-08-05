@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Card, Button, CardImg, Row, Col } from 'react-bootstrap';
 
-// Sample data for salads (you can replace this with your actual data)
-const saladsData = [
+// Sample data for desserts (you can replace this with your actual data)
+const dessertsData = [
     {
         id: 1,
         name: 'NEW! Peaches & Cream Milshake',
@@ -77,25 +77,25 @@ const saladsData = [
     }
 ];
 
-export default function Salads() {
+export default function Dessert() {
     return (
         <Container>
             <Row>
-                {saladsData.map((salad) => (
-                    <Col key={salad.id} xs={12} md={4}>
+                {dessertsData.map((dessert) => (
+                    <Col key={dessert.id} xs={12} md={3}>
                         <Card className="p-2">
                             <CardImg
                                 variant='top'
-                                src={salad.image}
-                                alt={salad.name}
+                                src={dessert.image}
+                                alt={dessert.name}
                                 style={{ width: '100%', height: '10em' }} // Adjust height as needed
                             />
                             <Card.Text>
-                                <b>{salad.name}</b>
+                                <b>{dessert.name}</b>
                             </Card.Text>
                             <hr />
-                            <p>{salad.price}</p>
-                            <p>{salad.description}</p>
+                            <p>${dessert.price} | {dessert.cal} Cal</p>
+                            <p>{dessert.description}</p>
                             <Button type='submit'>Add To Bag</Button>
                         </Card>
                     </Col>
