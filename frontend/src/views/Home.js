@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function Home() {
     return (
-        <div style={{ display: 'block', width: 1000, padding: 30 }}>
+        <div style={{ display: 'block', width: 1000, padding: 30, margin: 'auto' }}>
             <Carousel>
                 <Carousel.Item interval={15000}>
                     <img
@@ -24,9 +24,11 @@ export default function Home() {
                 </Carousel.Item>
                 <Carousel.Item interval={15000}>
                     <img
-                        className="d-block w-100"
-                        src="https://cleverhousewife.com/wp-content/uploads/2012/04/red-royalty.jpg"
+                        className="d-block"
+                        src="https://www.nrn.com/sites/nrn.com/files/red-robin-restaurant-industry-veteran-paul-murphy-ceo_1.gif"
                         alt="Rewards"
+                        width='1000 px'
+                        height='626 pxS'
                     />
                     <Carousel.Caption>
                         <h3>Login!</h3>
@@ -35,6 +37,21 @@ export default function Home() {
                         action='/Login' class='inline'
                         >
                         <button variant="light">Login</button>
+                        </form>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={15000}>
+                    <img
+                        className="d-block w-100"
+                        src="https://www.federalwaymirror.com/wp-content/uploads/2021/09/26515344_web1_T-burger.jpg"
+                        alt="Menu"
+                    />
+                    <Carousel.Caption>
+                        <h3>Look at Our Delicious Menu</h3>
+                        <form
+                        action='/Menu' class='inline'
+                        >
+                        <button variant="light">Go to Menu</button>
                         </form>
                     </Carousel.Caption>
                 </Carousel.Item>
