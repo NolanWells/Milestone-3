@@ -64,10 +64,10 @@ export default function Home() {
                     <h7
                     style={{position: 'absolute', top: '100%', left: '45%' }}
                     >Copyright 2023 Red Robin, Inc.</h7>
-                    <p style={{position: 'absolute', top: '105%', left: '43%' }}>Facebook</p>
-                    <p style={{position: 'absolute', top: '105%', left: '47%' }}>Twitter</p>
-                    <p style={{position: 'absolute', top: '105%', left: '51%' }}>YouTube</p>
-                    <p style={{position: 'absolute', top: '105%', left: '55%' }}>Instgram</p>
+                    <a  href='https://www.facebook.com/RedRobinBurgers/' style={{position: 'absolute', top: '103%', left: '42%' }}>Facebook</a>
+                    <a  href='https://twitter.com/redrobinburgers/' style={{position: 'absolute', top: '103%', left: '47%' }}>Twitter</a>
+                    <a  href='https://www.youtube.com/RedRobinBurgers' style={{position: 'absolute', top: '103%', left: '51%' }}>YouTube</a>
+                    <a href='https://www.instagram.com/redrobinburgers/' style={{position: 'absolute', top: '103%', left: '56%' }}>Instgram</a>
 
                 </div>
             </footer>
