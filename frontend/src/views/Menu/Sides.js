@@ -71,8 +71,8 @@ export default function Sides() {
                             </Card.Text>
                             <hr />
                             <div className="flex-grow-1" style={{ backgroundImage: 'linear-gradient(105deg, darkred, black)', color: 'white', borderRadius: '15%' }}> {/* This div will make the button take the remaining vertical space */}
-                            <p>${sides.price} | {sides.cal} Cal</p>
-                            <p>{sides.description}</p>
+                                <p>${sides.price} | {sides.cal} Cal</p>
+                                <p>{sides.description}</p>
                             </div>
                             <hr />
                             <Button type='submit' variant='danger'>Add To Bag</Button>
