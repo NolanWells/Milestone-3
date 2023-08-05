@@ -53,26 +53,29 @@ const sidesData = [
     }
 ];
 
-export default function Salads() {
+export default function Sides() {
     return (
         <Container>
             <Row>
                 {sidesData.map((sides) => (
-                    <Col key={sides.id} xs={12} md={4}>
-                        <Card className="p-2">
+                    <Col key={sides.id} xs={12} md={3}>
+                        <Card className="p-2" style={{ height: '32em' }}> {/* Set the desired height for the cards */}
                             <CardImg
                                 variant='top'
                                 src={sides.image}
                                 alt={sides.name}
-                                style={{ width: '100%', height: '10em' }} // Adjust height as needed
+                                style={{ width: '100%', height: '15em' }} // Adjust height as needed
                             />
                             <Card.Text>
                                 <b>{sides.name}</b>
                             </Card.Text>
                             <hr />
-                            <p>{sides.price}</p>
+                            <div className="flex-grow-1" style={{ backgroundImage: 'linear-gradient(105deg, darkred, black)', color: 'white', borderRadius: '15%' }}> {/* This div will make the button take the remaining vertical space */}
+                            <p>${sides.price} | {sides.cal} Cal</p>
                             <p>{sides.description}</p>
-                            <Button type='submit'>Add To Bag</Button>
+                            </div>
+                            <hr />
+                            <Button type='submit' variant='danger'>Add To Bag</Button>
                         </Card>
                     </Col>
                 ))}

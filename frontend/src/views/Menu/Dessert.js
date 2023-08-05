@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Card, Button, CardImg, Row, Col } from 'react-bootstrap';
 
-// Sample data for salads (you can replace this with your actual data)
-const saladsData = [
+// Sample data for desserts (you can replace this with your actual data)
+const dessertsData = [
     {
         id: 1,
         name: 'NEW! Peaches & Cream Milshake',
@@ -77,26 +77,29 @@ const saladsData = [
     }
 ];
 
-export default function Salads() {
+export default function Desserts() {
     return (
         <Container>
             <Row>
-                {saladsData.map((salad) => (
-                    <Col key={salad.id} xs={12} md={4}>
-                        <Card className="p-2">
+                {dessertsData.map((dessert) => (
+                    <Col key={dessert.id} xs={12} md={3}>
+                        <Card className="p-2" style={{ height: '32em' }}> {/* Set the desired height for the cards */}
                             <CardImg
                                 variant='top'
-                                src={salad.image}
-                                alt={salad.name}
-                                style={{ width: '100%', height: '10em' }} // Adjust height as needed
+                                src={dessert.image}
+                                alt={dessert.name}
+                                style={{ width: '100%', height: '15em' }} // Adjust height as needed
                             />
                             <Card.Text>
-                                <b>{salad.name}</b>
+                                <b>{dessert.name}</b>
                             </Card.Text>
                             <hr />
-                            <p>{salad.price}</p>
-                            <p>{salad.description}</p>
-                            <Button type='submit'>Add To Bag</Button>
+                            <div className="flex-grow-1" style={{ backgroundImage: 'linear-gradient(105deg, darkred, black)', color: 'white', borderRadius: '15%' }}> {/* This div will make the button take the remaining vertical space */}
+                            <p>${dessert.price} | {dessert.cal} Cal</p>
+                            <p>{dessert.description}</p>
+                            </div>
+                            <hr />
+                            <Button type='submit' variant='danger'>Add To Bag</Button>
                         </Card>
                     </Col>
                 ))}
