@@ -77,26 +77,29 @@ const dessertsData = [
     }
 ];
 
-export default function Dessert() {
+export default function Desserts() {
     return (
         <Container>
             <Row>
                 {dessertsData.map((dessert) => (
                     <Col key={dessert.id} xs={12} md={3}>
-                        <Card className="p-2">
+                        <Card className="p-2" style={{ height: '32em' }}> {/* Set the desired height for the cards */}
                             <CardImg
                                 variant='top'
                                 src={dessert.image}
                                 alt={dessert.name}
-                                style={{ width: '100%', height: '10em' }} // Adjust height as needed
+                                style={{ width: '100%', height: '15em' }} // Adjust height as needed
                             />
                             <Card.Text>
                                 <b>{dessert.name}</b>
                             </Card.Text>
                             <hr />
+                            <div className="flex-grow-1" style={{ backgroundImage: 'linear-gradient(105deg, darkred, black)', color: 'white', borderRadius: '15%' }}> {/* This div will make the button take the remaining vertical space */}
                             <p>${dessert.price} | {dessert.cal} Cal</p>
                             <p>{dessert.description}</p>
-                            <Button type='submit'>Add To Bag</Button>
+                            </div>
+                            <hr />
+                            <Button type='submit' variant='danger'>Add To Bag</Button>
                         </Card>
                     </Col>
                 ))}

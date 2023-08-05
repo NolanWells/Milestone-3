@@ -131,20 +131,23 @@ export default function Burgers() {
             <Row>
                 {burgersData.map((burger) => (
                     <Col key={burger.id} xs={12} md={3}>
-                        <Card className="p-2">
+                        <Card className="p-2" style={{ height: '32em' }}> {/* Set the desired height for the cards */}
                             <CardImg
                                 variant='top'
                                 src={burger.image}
                                 alt={burger.name}
-                                style={{ width: '100%', height: '10em' }} // Adjust height as needed
+                                style={{ width: '100%', height: '12em' }} // Adjust height as needed
                             />
                             <Card.Text>
                                 <b>{burger.name}</b>
                             </Card.Text>
                             <hr />
+                            s<div className="flex-grow-1" style={{ backgroundImage: 'linear-gradient(105deg, darkred, black)', color: 'white', borderRadius: '15%' }}> {/* This div will make the button take the remaining vertical space */}
                             <p>${burger.price} | {burger.cal} Cal</p>
                             <p>{burger.description}</p>
-                            <Button type='submit'>Add To Bag</Button>
+                            </div>
+                            <hr />
+                            <Button type='submit' variant='danger'>Add To Bag</Button>
                         </Card>
                     </Col>
                 ))}
