@@ -16,9 +16,9 @@ export default function Home() {
                     <Carousel.Caption>
                         <h3>A Burger That Makes You Mouth Water!</h3>
                         <form
-                        action='/Order' class='inline'
+                            action='/Order' class='inline'
                         >
-                        <button variant="light">Order Now</button>
+                            <button variant="light">Order Now</button>
                         </form>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -34,9 +34,9 @@ export default function Home() {
                         <h3>Login!</h3>
                         <p>Login in to Earn Rewards or Order to You!</p>
                         <form
-                        action='/Login' class='inline'
+                            action='/Login' class='inline'
                         >
-                        <button variant="light">Login</button>
+                            <button variant="light">Login</button>
                         </form>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -49,14 +49,30 @@ export default function Home() {
                     <Carousel.Caption>
                         <h3>Look at Our Delicious Menu</h3>
                         <form
-                        action='/Menu' class='inline'
+                            action='/Menu' class='inline'
                         >
-                        <button variant="light">Go to Menu</button>
+                            <button variant="light">Go to Menu</button>
                         </form>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <footer>
+                <div>
+                    <img src='https://www.redrobin.com/assets/images/RR_Logo.svg'
+                        style={{ width: '125px', height: '125px', position: 'absolute', top: '90%', left: '47%' }}
+                    />
+                    <h7
+                    style={{position: 'absolute', top: '100%', left: '45%' }}
+                    >Copyright 2023 Red Robin, Inc.</h7>
+                    <p style={{position: 'absolute', top: '105%', left: '43%' }}>Facebook</p>
+                    <p style={{position: 'absolute', top: '105%', left: '47%' }}>Twitter</p>
+                    <p style={{position: 'absolute', top: '105%', left: '51%' }}>YouTube</p>
+                    <p style={{position: 'absolute', top: '105%', left: '55%' }}>Instgram</p>
+
+                </div>
+            </footer>
         </div>
-    );
+    )
+
 }
 
