@@ -17,7 +17,7 @@ function App() {
 
         <Nav className='navLinks'>
 
-        <Nav.Item>
+          <Nav.Item>
             <Nav.Link href="/">
               <Link className='homeLink' to="/">Home</Link>
             </Nav.Link>
@@ -31,29 +31,31 @@ function App() {
 
           <Nav.Item>
             <Nav.Link href="/">
-              <Link className='orderLink' to="/Order" style={{textDecoration: 'none'}}>Order Now</Link>
+              <Link className='orderLink' to="/Order" style={{ textDecoration: 'none' }}>Order Now</Link>
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
             <Nav.Link href="/">
-              <Link className='loginLink' to="/Login" style={{textDecoration: 'none'}}>Login</Link>
+              <Link className='loginLink' to="/Login" style={{ textDecoration: 'none' }}>Login</Link>
             </Nav.Link>
           </Nav.Item>
 
-          <img src='https://www.redrobin.com/assets/images/RR_Logo.svg' 
-            style={{ width: '125px', height: '125px', position: 'absolute', left: '47%', top: '-3%'}}
-          />
+          <a href='/'>
+            <img src='https://www.redrobin.com/assets/images/RR_Logo.svg'
+              style={{ width: '125px', height: '125px', position: 'absolute', left: '47%', top: '-3%' }}
+              to="/"
+            /></a>
 
         </Nav>
 
       </Container>
 
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/Menu" element={<Menu/>}/>
-        <Route path="/Order" element={<Order/>}/>
-        <Route path="/Login" element={<Login/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/Menu" element={<Menu />} />
+        <Route path="/Order" element={<Order />} />
+        <Route path="/Login" element={<Login />} />
       </Routes>
     </Router>
   );

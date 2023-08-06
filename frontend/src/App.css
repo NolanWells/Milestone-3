@@ -32,3 +32,9 @@
 .navLinks .nav-link:hover {
   background-color: #eb131b;
 }
+
+.homeLink2 {
+  .nav-link:hover {
+    background-color: purple;
+  }
+}
