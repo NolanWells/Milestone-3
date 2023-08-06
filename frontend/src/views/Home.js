@@ -1,6 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
+import Container from "react-bootstrap/esm/Container";
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+
 
 export default function Home() {
     return (
@@ -56,18 +61,54 @@ export default function Home() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <br />
+            <Container>
+                <Row className="justify-content-md-center">
+                    <Col xs={6} md={4}>
+                        <Image position='abosulte' width='100%' height='50%' src='https://www.redrobin.com/sites/default/files/styles/full_width_md/public/2023-06/flat-top-grill-patty-with-cheese.jpg.webp?itok=pJf3tzlO/' roundedCircle />
+                        <br/>
+                        <div>
+                            <h3>NEW GRILLS FOR US. JUICIER BURGERS FOR YOU.</h3>
+                            <p>The driving force behind the juicy. Our new cooking and searing method traps in seasoning and coaxes out flavor you absolutely can’t make at home.</p>
+                        </div>
+                    </Col>
+
+                </Row>
+                <Row className="justify-content-md-center">
+                    <Col xs={6} md={4}>
+                        <Image position='abosulte' margin='auto' width='100%' height='50%' src='https://www.redrobin.com/sites/default/files/styles/full_width_md/public/2023-06/brioche-buns.jpg.webp?itok=r-O0MzHS' roundedCircle />
+                        <br/>
+                        <div>
+                            <h3>THE ONLY CONTAINER FOR UNCONTAINABLE FLAVOR.</h3>
+                            <p>An unsung hero on the journey to a better burger is our new brioche bun — buttery, toasty goodness, providing a bed of richness and flavor for our bigger, juicier patties.</p>
+                        </div>
+                    </Col>
+
+                </Row>
+                <Row className="justify-content-md-center">
+                    <Col xs={6} md={4}>
+                        <Image position='abosulte' margin='auto' width='100%' height='50%' src='https://www.redrobin.com/sites/default/files/styles/full_width_md/public/2023-06/plates.jpg.webp?itok=S8br2ndF' roundedCircle />
+                        <br/>
+                        <div>
+                            <h3>THEY DESERVE THRONES. BUT THOSE ARE HARD TO WASH.</h3>
+                            <p>Take your first bite and you know. Bigger, juicier, hand-crafted gourmet burgers with never-before-seen flavors -- a basket just won't do.</p>
+                        </div>
+                    </Col>
+
+                </Row>
+            </Container>
             <footer>
                 <div>
                     <img src='https://www.redrobin.com/assets/images/RR_Logo.svg'
-                        style={{ width: '125px', height: '125px', position: 'absolute', top: '90%', left: '47%' }}
+                        style={{ width: '125px', height: '125px', position: 'absolute', top: '180%', left: '47%' }}
                     />
                     <h7
-                    style={{position: 'absolute', top: '100%', left: '45%' }}
+                        style={{ position: 'absolute', top: '190%', left: '47%' }}
                     >Copyright 2023 Red Robin, Inc.</h7>
-                    <a  href='https://www.facebook.com/RedRobinBurgers/' style={{position: 'absolute', top: '103%', left: '42%' }}>Facebook</a>
-                    <a  href='https://twitter.com/redrobinburgers/' style={{position: 'absolute', top: '103%', left: '47%' }}>Twitter</a>
-                    <a  href='https://www.youtube.com/RedRobinBurgers' style={{position: 'absolute', top: '103%', left: '51%' }}>YouTube</a>
-                    <a href='https://www.instagram.com/redrobinburgers/' style={{position: 'absolute', top: '103%', left: '56%' }}>Instgram</a>
+                    <a href='https://www.facebook.com/RedRobinBurgers/' style={{ position: 'absolute', top: '210%', left: '42%' }}>Facebook</a>
+                    <a href='https://twitter.com/redrobinburgers/' style={{ position: 'absolute', top: '210%', left: '47%' }}>Twitter</a>
+                    <a href='https://www.youtube.com/RedRobinBurgers' style={{ position: 'absolute', top: '210%', left: '51%' }}>YouTube</a>
+                    <a href='https://www.instagram.com/redrobinburgers/' style={{ position: 'absolute', top: '210%', left: '56%' }}>Instgram</a>
 
                 </div>
             </footer>
@@ -75,4 +116,3 @@ export default function Home() {
     )
 
 }
-
