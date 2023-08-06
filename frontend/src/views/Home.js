@@ -33,7 +33,7 @@ export default function Home() {
                         src="https://www.nrn.com/sites/nrn.com/files/red-robin-restaurant-industry-veteran-paul-murphy-ceo_1.gif"
                         alt="Rewards"
                         width='1000 px'
-                        height='626 pxS'
+                        height='626 px'
                     />
                     <Carousel.Caption>
                         <h3>Login!</h3>
