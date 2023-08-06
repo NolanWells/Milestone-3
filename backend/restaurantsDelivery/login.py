@@ -7,7 +7,6 @@ CORS(bp, resources={r"/login/*": {"origins": "http://localhost:3000"}})
 
 bcrypt = Bcrypt()
 
-fixed_salt = "Nolan's_salt"
 
 @bp.route('/', methods = ['POST'])
 def login():
@@ -17,8 +16,8 @@ def login():
     
     # Generate a hashed password with a random salt
 
+    print(username + password)
     hashed_password = bcrypt.generate_password_hash('123',10)
-
     print(bcrypt.check_password_hash(hashed_password, password))
 
     return f'---------------'
