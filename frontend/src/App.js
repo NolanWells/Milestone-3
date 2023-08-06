@@ -9,6 +9,7 @@ import Home from "./views/Home";
 import Menu from "./views/Menu";
 import Order from "./views/Order";
 import Login from "./views/Login";
+import Checkout from './views/Menu/Checkout';
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function App() {
             <img src='https://cdn-icons-png.flaticon.com/128/8091/8091819.png'
               style={{ width: '80px', height: '80px', position: 'relative', left: '1000%', top: '0%' }}
               to="/"
-            /></a>
+            /><Checkout /></a>
 
         </Nav>
 
