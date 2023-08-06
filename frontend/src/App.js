@@ -47,6 +47,12 @@ function App() {
               to="/"
             /></a>
 
+            <Nav.Item>
+              <Nav.Link href='/'>
+                <Link className='checkoutPage' to='/checkout' style={{ textDecoration: 'none' }}>Checkout</Link>
+              </Nav.Link>
+            </Nav.Item>
+
         </Nav>
 
       </Container>
