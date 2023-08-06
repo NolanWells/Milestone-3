@@ -1,9 +1,10 @@
 from flask import Blueprint, request
-from flask_cors import CORS
 from flask_bcrypt import Bcrypt
+from flask_cors import CORS
 
 bp = Blueprint('login', __name__, url_prefix="/login")
-CORS(bp, resources={r"/login/*": {"origins": "http://localhost:3000"}})
+CORS(bp, resources={"/login/": {"origins": "http://localhost:5000"}})
+
 
 bcrypt = Bcrypt()
 
@@ -13,7 +14,7 @@ def login():
     data = request.get_json()
     username = data.get('Username')
     password = data.get('Password')
-    
+    print(password)
     # Generate a hashed password with a random salt
 
     print(username + password)
