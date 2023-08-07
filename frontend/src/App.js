@@ -44,7 +44,7 @@ function App() {
 
           <Nav.Item>
             <Nav.Link href="/">
-              <Link className='loginLink' to="/checkout" style={{ textDecoration: 'none' }}></Link>
+              <Link className='loginLink' to="/Checkout" style={{ textDecoration: 'none' }}></Link>
             </Nav.Link>
           </Nav.Item>
 
@@ -54,11 +54,11 @@ function App() {
               to="/"
             /></a>
 
-          <a href='/checkout'>
-            <img src='https://cdn-icons-png.flaticon.com/128/8091/8091819.png'
-              style={{ width: '80px', height: '80px', position: 'relative', left: '1000%', top: '0%' }}
-              to="/"
-            /><Checkout /></a>
+            <a href='/Checkout'>
+              <img src='https://cdn-icons-png.flaticon.com/128/8091/8091819.png'
+                style={{ width: '80px', height: '80px', position: 'relative', left: '1000%', top: '0%' }}
+                to="/"
+              /></a>
 
         </Nav>
 
@@ -69,8 +69,9 @@ function App() {
         <Route path="/Menu" element={<Menu />} />
         <Route path="/Order" element={<Order />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Checkout" element={<Checkout />} />
       </Routes>
-    </Router>
+    </Router >
   );
 }
 
