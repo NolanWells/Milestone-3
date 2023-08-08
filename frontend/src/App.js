@@ -37,7 +37,7 @@ function App() {
 
           <Nav.Item>
             <Nav.Link href="/">
-              <Link className='loginLink' to="/checkout" style={{ textDecoration: 'none' }}></Link>
+              <Link className='loginLink' to="/Checkout" style={{ textDecoration: 'none' }}></Link>
             </Nav.Link>
           </Nav.Item>
 
@@ -61,9 +61,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Menu" element={<Menu />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Checkout" element={<Checkout/>}/>
+        <Route path="/Checkout" element={<Checkout />} />
       </Routes>
-    </Router>
+    </Router >
   );
 }
 
