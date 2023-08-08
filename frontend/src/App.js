@@ -7,7 +7,6 @@ import Container from 'react-bootstrap/Container';
 
 import Home from "./views/Home";
 import Menu from "./views/Menu";
-import Order from "./views/Order";
 import Login from "./views/Login";
 import Checkout from './views/Menu/Checkout';
 
@@ -32,12 +31,6 @@ function App() {
 
           <Nav.Item>
             <Nav.Link href="/">
-              <Link className='orderLink' to="/Order" style={{ textDecoration: 'none' }}>Order Now</Link>
-            </Nav.Link>
-          </Nav.Item>
-
-          <Nav.Item>
-            <Nav.Link href="/">
               <Link className='loginLink' to="/Login" style={{ textDecoration: 'none' }}>Login</Link>
             </Nav.Link>
           </Nav.Item>
@@ -54,11 +47,11 @@ function App() {
               to="/"
             /></a>
 
-            <a href='/Checkout'>
-              <img src='https://cdn-icons-png.flaticon.com/128/8091/8091819.png'
-                style={{ width: '80px', height: '80px', position: 'relative', left: '1000%', top: '0%' }}
-                to="/"
-              /></a>
+          <a href='/checkout'>
+            <img src='https://cdn-icons-png.flaticon.com/128/8091/8091819.png'
+              style={{ width: '80px', height: '80px', position: 'relative', left: '1000%', top: '0%' }}
+              to="/"
+            /></a>
 
         </Nav>
 
@@ -67,7 +60,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Menu" element={<Menu />} />
-        <Route path="/Order" element={<Order />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Checkout" element={<Checkout />} />
       </Routes>

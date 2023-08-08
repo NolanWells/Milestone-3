@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 
 export default function CheckoutBag() {
@@ -295,11 +294,16 @@ export default function CheckoutBag() {
         // For the sake of this barebones example, we'll simply display an alert message.
     };
 
+    const bag = localStorage.getItem('bag')
+
     return (
         <Container>
             <h1>Checkout Bag</h1>
+            
+            <div>{ bag }</div>
 
             <Button variant="primary" onClick={handleCheckout}>Checkout</Button>
         </Container>
     );
 }
+

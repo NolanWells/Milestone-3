@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Card, Button, CardImg, Row, Col } from 'react-bootstrap';
 
+import CheckoutBag from './CheckoutBag';
+
 // Sample data for burgers (you can replace this with your actual data)
 const burgersData = [
     {
@@ -125,6 +127,8 @@ const burgersData = [
     }
 ];
 
+
+
 export default function Burgers() {
 
     const initialArray = JSON.parse(localStorage.getItem('bag')) || []
@@ -139,6 +143,7 @@ export default function Burgers() {
 
     return (
         <Container>
+            <h1>{typeof(localStorage.getItem('bag'))}</h1>
             <Row>
                 {burgersData.map((burger) => (
                     <Col key={burger.id} xs={12} md={3}>
