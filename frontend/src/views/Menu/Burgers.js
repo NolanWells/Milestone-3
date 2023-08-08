@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Card, Button, CardImg, Row, Col } from 'react-bootstrap';
+
+import CheckoutBag from './CheckoutBag';
 
 // Sample data for burgers (you can replace this with your actual data)
 const burgersData = [
@@ -125,9 +127,23 @@ const burgersData = [
     }
 ];
 
+
+
 export default function Burgers() {
+
+    const initValue = localStorage.getItem('bag') || [];
+    const [bag, setBag] = useState(initValue);
+
+    function addItem(id) {
+        setBag([...bag, id])
+        
+        localStorage.setItem('bag', bag)
+        alert(bag)
+    }
+
     return (
         <Container>
+            <h1>{typeof(localStorage.getItem('bag'))}</h1>
             <Row>
                 {burgersData.map((burger) => (
                     <Col key={burger.id} xs={12} md={3}>
@@ -147,7 +163,15 @@ export default function Burgers() {
                                 <p>{burger.description}</p>
                             </div>
                             <hr />
-                            <Button id='createItem' type='submit' variant='danger'>Add To Bag</Button>
+                            <Button 
+                                id={ burger.id } 
+                                type='submit' 
+                                variant='danger'
+                                onClick={ () => addItem(burger.id) }
+                                >
+                                    Add To Bag
+                            </Button>
+
                         </Card>
                     </Col>
                 ))}
