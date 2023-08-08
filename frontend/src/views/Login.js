@@ -16,7 +16,7 @@ function Login() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3000/Login', {email, password})
+        axios.post('http://localhost:5000/Login', {email, password})
         .then(res => {
             console.log("Login: " + res.data);
             if(res.data.Status === "Success") {
