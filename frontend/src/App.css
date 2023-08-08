@@ -32,3 +32,27 @@
 .navLinks .nav-link:hover {
   background-color: #eb131b;
 }
+
+.homeLink2 {
+  .nav-link:hover {
+    background-color: purple;
+  }
+}
+
+body{
+  background-image: 
+  url('https://static.vecteezy.com/system/resources/previews/004/447/761/original/abstract-red-fluid-wave-background-free-vector.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*Use 'scroll' to make the header and footer scroll with the background.*/
+  background-size: cover;
+}
+
+.CarouselBtn{
+  transition-duration: .4s;
+  border-radius: 8px;
+  background-color: aliceblue;
+}
+
+.CarouselBtn:hover{
+  background-color: #eb131b;
+}
