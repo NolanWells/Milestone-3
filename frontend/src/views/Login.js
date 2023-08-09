@@ -12,7 +12,7 @@ function Login() {
     const [password, setPassword] = useState()
     const navigate = useNavigate()
 
-
+// if user login is a success then it will send to home
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -29,7 +29,7 @@ function Login() {
         }).catch(err => console.log(err))
     }
 
-
+// login form
     return(
         <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="bg-white p-3 rounded w-25">
@@ -65,7 +65,9 @@ function Login() {
          
           </button>
           </form>
-          <p>Already Have an Account</p>
+
+          <br/>
+          <p>Don't Have an Account?</p>
           <Link to="/Register" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
             Sign Up
           </Link>

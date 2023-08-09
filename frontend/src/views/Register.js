@@ -13,17 +13,17 @@ function Register() {
     const navigate = useNavigate()
 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault()
-        axios.post('http://localhost:3000/Register', {name, email, password})
-        .then(res => {
-            navigate('/Login')
-        }).catch(err => console.log(err))
+         await axios.post('http://localhost:3000/Register', {name, email, password})
+        .then (res => {
+           navigate('/Login')
+        }).catch (err => console.log(err))
     }
 
 
   return (
-    <div className="d-flex justify-content-center align-items-center bg-white vh-100">
+    <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="bg-white p-3 rounded w-25">
         <h2>Register</h2>
         <form onSubmit={handleSubmit}>
@@ -69,8 +69,10 @@ function Register() {
             Register
           </button>
           </form>
-          <p>Already Have an Account</p>
-          <Link to="/Login" className="btn btn-default border w-100 rounded-0 text-decoration-none">
+
+          <br/>
+          <p>Already Have an Account?</p>
+          <Link to="/login" className="btn btn-default border w-100 rounded-0 text-decoration-none">
             Login
           </Link>
        
