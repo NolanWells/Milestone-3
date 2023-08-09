@@ -31,13 +31,13 @@ function App() {
 
           <Nav.Item>
             <Nav.Link href="/">
-              <Link className='loginLink' to="/Login" style={{ textDecoration: 'none' }}>Login</Link>
+              <Link className='loginLink' to="/Login" >Login</Link>
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
             <Nav.Link href="/">
-              <Link className='loginLink' to="/Checkout" style={{ textDecoration: 'none' }}></Link>
+              <Link className='checkoutLink' to="/Checkout" style={{ textDecoration: 'none' }}></Link>
             </Nav.Link>
           </Nav.Item>
 

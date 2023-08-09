@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.homeLink, .menuLink, .loginLink{
+  color: goldenrod;
+} 
+
 
 /* Add this to your existing CSS or create a new stylesheet */
 .navBar {
@@ -16,6 +20,7 @@
   list-style: none; /* Remove default list styling */
   margin: 0; /* Remove default margin for the list */
   padding: 0; /* Remove default padding for the list */
+  font-family: fantasy;
 }
 
 .navLinks .nav-item {
