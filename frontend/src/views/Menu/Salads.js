@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Card, Button, CardImg, Row, Col } from 'react-bootstrap';
 import saladsData from './food/saladsData';
 
