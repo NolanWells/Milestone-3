@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import ListGroup from 'react-bootstrap/ListGroup';
+// import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 
 import items from './food/items';
@@ -16,6 +16,7 @@ export default function Checkout() {
     function handleCheckout() {
         localStorage.removeItem('bag')
         setBag([])
+        alert('Your Order had been placed')
     }
         
     function removeItem(id) {
