@@ -36,11 +36,12 @@ const verifyUser = (req, res, next) => {
     }
 }
 
+
 app.get('/',verifyUser ,(req, res) => {
     res.json("Success")
 })
 
-app.post('/Register', (req, res) => {
+app.post('/register', (req, res) => {
     const {name, email, password} = req.body;
     bcrypt.hash(password, 10)
     .then(hash => {
@@ -50,7 +51,7 @@ app.post('/Register', (req, res) => {
     }).catch(err => res.json(err))
 })
 
-app.post('/Login', (req, res) => {
+app.post('/login', (req, res) => {
     const {email, password} = req.body;
     UserModel.findOne({email: email})
     .then(user => {
