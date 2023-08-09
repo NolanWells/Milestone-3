@@ -14,7 +14,8 @@ export default function Checkout() {
     const [bag, setBag] = useState(initialArray)    
     
     function handleCheckout() {
-        alert('you checked out')
+        localStorage.removeItem('bag')
+        setBag([])
     }
         
     function removeItem(id) {

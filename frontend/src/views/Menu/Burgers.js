@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Card, Button, CardImg, Row, Col } from 'react-bootstrap';
 
-import CheckoutBag from './CheckoutBag';
 import burgersData from './food/burgersData';
 
 // Sample data for burgers (you can replace this with your actual data)
@@ -9,10 +8,9 @@ import burgersData from './food/burgersData';
 
 
 
-export default function Burgers() {
+export default function Burgers({setBag, bag}) {
 
-    const initialArray = JSON.parse(localStorage.getItem('bag')) || []
-    const [bag, setBag] = useState(initialArray)
+
 
     const addItem = (item) => {
         const updatedBag = [...bag, item];

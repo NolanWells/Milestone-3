@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Card, Button, CardImg, Row, Col } from 'react-bootstrap';
 
 // Sample data for sides (you can replace this with your actual data)
@@ -53,7 +53,17 @@ const sidesData = [
     }
 ];
 
-export default function Sides() {
+export default function Sides({setBag, bag}) {
+
+
+
+    const addItem = (item) => {
+        const updatedBag = [...bag, item];
+        setBag(updatedBag);
+        localStorage.setItem('bag', JSON.stringify(updatedBag));
+      };
+    
+
     return (
         <Container>
             <Row>
@@ -75,7 +85,7 @@ export default function Sides() {
                                 <p>{sides.description}</p>
                             </div>
                             <hr />
-                            <Button type='submit' variant='danger'>Add To Bag</Button>
+                            <Button type='submit' variant='danger' onClick = {() => addItem(sides.id)}>Add To Bag</Button>
                         </Card>
                     </Col>
                 ))}
