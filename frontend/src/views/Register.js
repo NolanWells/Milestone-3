@@ -12,7 +12,7 @@ function Register() {
     const [password, setPassword] = useState()
     const navigate = useNavigate()
 
-
+// if user register is a success then it will send to home
     const handleSubmit = async(e) => {
         e.preventDefault()
          await axios.post('http://localhost:3000/Register', {name, email, password})
@@ -21,7 +21,7 @@ function Register() {
         }).catch (err => console.log(err))
     }
 
-
+    // register form
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="bg-white p-3 rounded w-25">
