@@ -10,8 +10,11 @@ import Menu from "./views/Menu";
 import Login from "./views/Login";
 import Register from './views/Register';
 import Checkout from './views/Menu/Checkout';
+import { useState } from 'react';
 
 function App() {
+    const initialArray = JSON.parse(localStorage.getItem('bag')) || []
+    const [bag, setBag] = useState(initialArray)
     return (
         <Router>
             <Container className='navBar'>
@@ -55,6 +58,7 @@ function App() {
                         style={{ width: '100px', height: '100px' }}
                         to="/"
                     />
+                    <div className='itemCount'>{bag.length}</div>
                 </a>
 
 
@@ -62,11 +66,11 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Menu" element={<Menu />} />
+                <Route path="/Menu" element={<Menu setBag={setBag} bag={bag} />} />
                 {/* <Route path="/Order" element={<Order/>}/> */}
                 <Route path="/Login" element={<Login />} />
                 <Route path="/Register" element={<Register />} />
-                <Route path="/Checkout" element={<Checkout />} />
+                <Route path="/Checkout" element={<Checkout setBag={setBag} bag={bag} />} />
             </Routes>
         </Router >
     );
