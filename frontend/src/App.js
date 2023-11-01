@@ -54,10 +54,6 @@ function App() {
                     /></a>
 
                 <a href='/checkout' className='basketLogo'>
-                    <img src='https://cdn-icons-png.flaticon.com/128/8091/8091819.png'
-                        style={{ width: '100px', height: '100px' }}
-                        to="/"
-                    />
                     <div className='itemCount'>{bag.length}</div>
                 </a>
 

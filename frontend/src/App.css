@@ -13,7 +13,9 @@
 .navBar {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+
   /* Use flexbox to create a horizontal layout */
   background-color: ghostwhite;
   padding: 20px;
@@ -23,8 +25,7 @@
 
 /* this means every Item in the navbar. */
 .navBar>* {
-  flex: 1 1 0px;
-
+  /* flex: 1 1 0px; */
 }
 
 .navBar>a>img {
@@ -91,7 +92,14 @@ body {
 }
 
 .basketLogo {
+  max-width: 100px;
   position: relative;
+  height: 75px;
+  width: 75px;
+  background-image: url('https://cdn-icons-png.flaticon.com/128/8091/8091819.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .basketcount {
@@ -100,4 +108,15 @@ body {
 
 .itemCount {
   position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #eb131b;
+  color: white;
+  /* this is to make the backgroung a circle */
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
